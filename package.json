@@ -1,0 +1,24 @@
+{
+  "name": "backend-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate Code for working backend w/ NodeJS and TypeScript",
+  "main": "src/index.ts",
+  "author": "nik-gautam",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn run build && node build/index.js",
+    "dev": "ts-node-dev --no-notify --respawn src/index.ts",
+    "build": "tsc --removeComments"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.7.36",
+    "ts-node": "^8.10.2",
+    "ts-node-dev": "^1.0.0-pre.58",
+    "typescript": "^3.9.7"
+  },
+  "dependencies": {
+    "apollo-server": "^2.16.1",
+    "graphql": "^15.3.0",
+    "mongoose": "^5.10.0"
+  }
+}
